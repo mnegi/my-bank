@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BankTest {
+public class Mbank {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         String str = "";

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03768020-5662-4af2-980b-248099bc73cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/mbank.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/BankTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/com/mbank/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/com/mbank/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/com/mbank/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/com/mbank/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/com/mbank/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/util/com/mbank/RandomNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mbank/src/util/com/mbank/SequenceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mbank/src/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mbank/src/Mbank.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mbank/src/BankTest.java">
+        <entry file="file://$PROJECT_DIR$/mbank/src/Mbank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,6 +114,8 @@
         <option value="$PROJECT_DIR$/mbank/src/Test.java" />
         <option value="$PROJECT_DIR$/mbank/src/util/com/mbank/RandomNumber.java" />
         <option value="$PROJECT_DIR$/mbank/src/BankTest.java" />
+        <option value="$PROJECT_DIR$/mbank/src/MyBank.java" />
+        <option value="$PROJECT_DIR$/mbank/src/Mbank.java" />
       </list>
     </option>
   </component>
@@ -158,20 +151,6 @@
               <item name="mbank" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="my-bank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-bank" type="462c0819:PsiDirectoryNode" />
-              <item name="mbank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mbank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-bank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-bank" type="462c0819:PsiDirectoryNode" />
-              <item name="mbank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mbank" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -180,7 +159,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548130839742" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548136862238" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
@@ -232,16 +211,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329927" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,10 +289,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mbank/src/BankTest.java">
+    <entry file="file://$PROJECT_DIR$/mbank/src/Mbank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
