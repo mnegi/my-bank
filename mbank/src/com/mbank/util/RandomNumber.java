@@ -1,4 +1,4 @@
-package util.com.mbank;
+package com.mbank.util;
 
 import java.util.Random;
 
