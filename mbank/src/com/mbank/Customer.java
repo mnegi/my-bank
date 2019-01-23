@@ -1,6 +1,8 @@
 package com.mbank;
 
-public class Customer {
+import java.io.Serializable;
+
+public class Customer implements Serializable {
     long id;
     String name;
     long mobile;

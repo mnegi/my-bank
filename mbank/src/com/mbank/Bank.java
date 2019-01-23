@@ -1,11 +1,14 @@
 package com.mbank;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Bank {
+public class Bank implements Serializable {
     long id;
     String name;
+
+    private static final String filepath="/Users/mnegi/mybank";
 
     HashMap<Long, Customer> customers; // get started with the collections framework
     // there is an issue with array list - filter out from the collection
@@ -76,6 +79,41 @@ public class Bank {
 
     public void setTransactions(HashMap<Long, Transaction> transactions) {
         this.transactions = transactions;
+    }
+
+
+    public static void writeObject(Bank bank){
+        // write bank object to a file
+        try {
+
+            FileOutputStream fileOut = new FileOutputStream(filepath);
+            ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
+            objectOut.writeObject(bank);
+            objectOut.close();
+            System.out.println("The Object  was succesfully written to a file");
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+    }
+
+    public static Bank readObject(){
+        Bank bank = null;
+        try {
+            FileInputStream fileIn = new FileInputStream(filepath);
+            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
+            bank = (Bank) objectIn.readObject();
+            objectIn.close();
+            System.out.println("The Object  was succesfully read from a file");
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        if(bank == null){
+            bank = new Bank();
+        }
+        return bank;
     }
 
     @Override

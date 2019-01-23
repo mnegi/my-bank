@@ -9,7 +9,9 @@ public class Mbank {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int option;
-        Bank myBank = new Bank();
+        Bank myBank = Bank.readObject();
+
+        System.out.println(myBank);
         AccountDAO ado = new AccountDAO(myBank);
 
         while(true) {

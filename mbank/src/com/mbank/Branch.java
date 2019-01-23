@@ -1,6 +1,8 @@
 package com.mbank;
 
-public class Branch {
+import java.io.Serializable;
+
+public class Branch implements Serializable {
 
     long id;
     String name;

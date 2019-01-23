@@ -1,8 +1,9 @@
 package com.mbank;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Transaction {
+public class Transaction  implements Serializable {
     long id;
     double amount;
     Date date;
