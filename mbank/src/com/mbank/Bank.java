@@ -1,8 +1,8 @@
 package com.mbank;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
+        import java.io.*;
+        import java.util.ArrayList;
+        import java.util.HashMap;
 
 public class Bank implements Serializable {
     long id;
@@ -16,13 +16,11 @@ public class Bank implements Serializable {
     HashMap<Long,Account> accounts;
     HashMap<Long,Transaction> transactions;
 
-
     // by default when an object is created
     // what values will these members get id, name??
     // id  = 0
     // name = null
     // default values
-
 
     public Bank() {
         this.id = 1;//generate from somewhere;
