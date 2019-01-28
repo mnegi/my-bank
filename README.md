@@ -61,13 +61,7 @@ Optionally you can also use brew for the same
 
 ## Create a maven project
     
-```mvn archetype:generate```
- 
-     -DgroupId=com.mybank.app 
-     -DartifactId=my-bank 
-     -DarchetypeArtifactId=maven-archetype-quickstart 
-     -DarchetypeVersion=1.4 
-     -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.mybank.app -DartifactId=my-bank -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
      
     
 ```mvn package```
